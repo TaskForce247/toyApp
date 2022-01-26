@@ -8,5 +8,15 @@
     <strong>Email:</strong>
     <%= user.email %>
   </p>
+   <%# <strong>Micropost content:</strong>
+    <%= user.microposts.first.content %>
+  </p> 
+  <% user.microposts.each do |micropost| %>
+<tr>
+<td><%= micropost.content %></td>
+
+</tr>
+<% end %>
+
 
 </div>
